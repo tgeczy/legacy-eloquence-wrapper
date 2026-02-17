@@ -1,0 +1,15 @@
+build*/
+*.dll
+*.exe
+*.obj
+*.o
+*.lib
+*.a
+*.pdb
+*.ilk
+*.exp
+*.log
+__pycache__/
+*.pyc
+.vs/
+CMakeSettings.json
