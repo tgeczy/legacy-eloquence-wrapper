@@ -16,7 +16,7 @@ from autoSettingsUtils.driverSetting import NumericDriverSetting, BooleanDriverS
 from autoSettingsUtils.utils import StringParameterInfo
 from speech.commands import IndexCommand, PitchCommand
 
-from . import _oldeloq
+from . import _oldeloq33 as _oldeloq
 
 # ---------------------------------------------------------------------------
 # Constants

@@ -13,7 +13,7 @@ import synthDriverHandler
 from synthDriverHandler import SynthDriver, VoiceInfo
 from speech.commands import IndexCommand, PitchCommand
 
-from . import _oldeloq
+from . import _oldeloq20 as _oldeloq
 
 # ---------------------------------------------------------------------------
 # Constants

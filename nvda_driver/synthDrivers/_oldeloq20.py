@@ -399,8 +399,12 @@ class EloquenceClient:
 			if self._player:
 				self._player.close()
 				self._player = None
-		# Do NOT call eloq_free — keep engine alive. The OS reclaims
-		# everything when NVDA exits.
+		if self._dll:
+			self._dll.eloq_free()
+			import ctypes
+			ctypes.windll.kernel32.FreeLibrary(self._dll._handle)
+			self._dll = None
+		self._engine_dir = None
 		self._audio_queue = queue.Queue()
 		self._sequence = 0
 		self._current_seq = 0
